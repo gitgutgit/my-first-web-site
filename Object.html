@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+  <html>
+   <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object </title>
+  </head>
+      <style>
+
+     </style>
+
+
+<body>
+  <h1> Object </h1>
+  <h2> Create </h2>
+
+ <script>
+   var coworkers = {
+     "programmer":"egoing",
+     "designer":"leeche"
+   };
+   document.write("programmer : " + coworkers.programmer+"<br>");
+   document.write("designer : " + coworkers.designer+"<br>");
+   coworkers.bookkeeper = "duru";
+   document.write("bookkeepr : " + coworkers.bookkeeper+"<br>");
+   coworkers["data scientist"] = "taeho";
+   document.write("data scientist : "+coworkers["data scientist"]+ "<br>"); //띄어스기 가능하게 하는
+ </script>
+  <h2> Iterate </h2>
+  <script>
+      for (var key in coworkers) {
+// key는 배열에 index 같은 역할
+        document.write (key+ ' : ' + coworkers[key] + '<br>');
+
+
+      }
+        </script>
+  <h2> property & Method </h2>
+  <script>
+    coworkers.showAll = function() {
+      for (var key in this) {
+
+        document.write (key+ ' : ' + this[key] + '<br>');
+
+
+      }
+    }
+    coworkers.showAll();
+    // 위에는 function showALL() {} 같은것 var showAll = function(); 정의도 다른방법
+  </script>
+
+
+</body>
+
+
+  </html>
