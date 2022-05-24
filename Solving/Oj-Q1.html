@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+  <html>
+   <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qbject-Quiz1 </title>
+  </head>
+   0부터 백만까지 더하는데 걸리는 시간을 측정하는 자바스크립트
+      <style>
+
+     </style>
+
+
+<body>
+ <script>
+  var previousTime = new Date();
+  var addition = 0;
+  for (i = 0; i <=1000000; i ++) {
+   addition += i;
+  }
+  var currentTime = new Date();
+  var resultTime = currentTime.getMilliseconds() - previousTime.getMilliseconds();
+  document.write(addition + "이 0부터 100만까지 더한값");
+  document.write(resultTime + "밀리초가 걸렸음!");
+ </script>
+
+</body>
+
+
+  </html>

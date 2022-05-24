@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+  <html>
+   <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qbject-Quiz5 </title>
+  </head>
+   문제: MaTH.random()을 이용해 배열에서 랜덤하게 하나의 요소를 선택해서
+   출력하는 프로그램을 작성해보자. <br>
+
+
+<body>
+ <script>
+  var arr =["Jan","Feb","March","April","May","Jun","July","August",
+"Sep","Oct","Nov","Dec"]
+  minIndex = 0;
+  maxIndex = arr.length - 1;
+  ranIndex = Math.floor(Math.random() * (maxIndex - minIndex+1))+minIndex;
+
+  valueArr = arr[ranIndex];
+  document.write(valueArr);
+ </script>
+
+</body>
+
+
+  </html>
